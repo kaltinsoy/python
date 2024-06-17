@@ -6,6 +6,8 @@ inventory = {
 'desk lamps': 20
 }
 
+print(type(inventory))
+
 lowLevel = 30
 
 sortedNameInventory = dict(sorted(inventory.items()))

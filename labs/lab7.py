@@ -15,6 +15,6 @@ def is_valid_float(N):
     else:
         return False
 # Test the function
-test_cases = ["+6.9","-1.0",".7","+.5","-.819","-+8.7","11.","11.0","4.0O0","nothing","15.29"]
+test_cases = ["+6.9","-1.0",".7","+.5","-.819","-+8.7","11.","11.0","4.0O0","nothing","15.29","+."]
 for case in test_cases:
     print(f"{case}: {is_valid_float(case)}")
