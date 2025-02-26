@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # Use Tkinter backend
+#matplotlib.use('TkAgg')  # Use Tkinter backend
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -13,5 +13,7 @@ plt.title("KFAU data")
 
 plt.xlabel("Years")
 plt.ylabel("Total student")
+
+plt.savefig('plot.png', dpi=300, bbox_inches='tight')
 
 plt.show()  # Display the plot

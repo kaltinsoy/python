@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # Use Tkinter backend
+#matplotlib.use('TkAgg')  # Use Tkinter backend
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -10,10 +10,12 @@ depC = [248, 441, 5678, 9008, 12345, 19234, 21000, 23567, 28056, 34590, 40000, 4
 
 depT = [depA, depB, depC]
 
-plt.boxplot(depT, patch_artist = True, labels = ["Departman A", "Departman B", "Departman C"])
+plt.boxplot(depT, patch_artist = True, tick_labels = ["Departman A", "Departman B", "Departman C"])
 
 plt.title("Box- and -Whisker Plot admittance to a university of 3 departments")
 plt.ylabel("Values")
 plt.xlabel("Departmans")
+
+plt.savefig('boxAndWhisker.png', dpi=300, bbox_inches='tight')
 
 plt.show()

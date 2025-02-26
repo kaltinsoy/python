@@ -1,5 +1,5 @@
 import matplotlib
-matplotlib.use('TkAgg')  # Use Tkinter backend
+#matplotlib.use('TkAgg')  # Use Tkinter backend
 import matplotlib.pyplot as plt
 #import numpy as np
 
@@ -11,4 +11,5 @@ plt.bar(ylabels, y)
 plt.title("KFAU data")
 plt.xlabel("Years")
 plt.ylabel("Student total")
+plt.savefig('bars.png', dpi=300, bbox_inches='tight')
 plt.show()
